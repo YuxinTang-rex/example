@@ -5,8 +5,8 @@ package com.fr.log;
  */
 public class LogApi {
     public static void main(String[] args) {
-        FineLoggerFactory.getLogger().info( "This is level info");    //需要服务器log级别为info时才会显示
-        FineLoggerFactory.getLogger().warn("This is level warning");   //需要服务器log级别为info、warning时才会显示
-        FineLoggerFactory.getLogger().error("This is level error");   //需要服务器log级别为info、warning、error时才会显示,10.0取消了server级别日志记录
+        FineLoggerFactory.getLogger().info( "This is level info");    //only display when server setting level is info
+        FineLoggerFactory.getLogger().warn("This is level warning");   // only display when server setting level is info,warning
+        FineLoggerFactory.getLogger().error("This is level error");   // only display when server setting level is info,warning and error. 10.0 cancelled server level log record
     }
 }
